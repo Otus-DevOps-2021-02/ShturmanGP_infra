@@ -2,6 +2,9 @@
 
 echo "This script will install MongoDB Service"
 
+echo "Install apt-transport-https (required)"
+sudo apt install -y apt-transport-https
+
 echo "Download apt and apply key"
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 
